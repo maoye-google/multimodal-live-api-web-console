@@ -193,7 +193,7 @@ const MapComponent: React.FC<MapComponentProps> = ({ onLocationSelect, apiKey, s
     if (!window.google && !scriptLoaded.current) {
       scriptLoaded.current = true;
       const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&language=en`;
       script.async = true;
       script.defer = true;
       
